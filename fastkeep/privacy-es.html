@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Fastkeep (Sephimandev)</title>
+<style>
+  :root{
+    color-scheme:light dark;
+    --bg:#fdfdfc;
+    --fg:#1a1a1a;
+    --muted:#5f6368;
+    --rule:#d9d9d6;
+    --accent:#3b4ccc;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#15161a;
+      --fg:#e6e6e3;
+      --muted:#9aa0a6;
+      --rule:#33353b;
+      --accent:#93a2ff;
+    }
+  }
+  html{-webkit-text-size-adjust:100%}
+  body{max-width:68ch;margin:3rem auto;padding:0 1.25rem;background:var(--bg);color:var(--fg);
+       font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.0625rem;line-height:1.65}
+  h1,h2,h3{line-height:1.25;text-wrap:balance}
+  h1{font-size:1.6rem;letter-spacing:-.015em;margin:0 0 .75rem}
+  h2{font-size:1.2rem;margin:2.25rem 0 .5rem}
+  h3{font-size:1.05rem;margin:1.5rem 0 .4rem}
+  p{text-wrap:pretty}
+  ul{padding-left:1.35rem}
+  li+li{margin-top:.4rem}
+  code{font-size:.9em;overflow-wrap:anywhere}
+  hr{margin:3rem 0;border:none;border-top:1px solid var(--rule)}
+  .lang{color:var(--muted);font-size:.9rem}
+  a{color:var(--accent);text-underline-offset:.15em}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  [id]{scroll-margin-top:1.5rem}
+  @media (max-width:36rem){
+    body{font-size:1.125rem;margin:2rem auto;padding:0 1.1rem}
+    h1{font-size:1.45rem}
+  }
+</style>
+</head>
+<body>
+
+<p class="lang" lang="en"><a href="privacy.html">English version</a></p>
+
+<h1>Política de privacidad — Fastkeep</h1>
+<p><strong>Aplicación:</strong> Fastkeep — Ayuno intermitente (Android, <code>com.sephimandev.fastkeep</code>)<br>
+<strong>Desarrollador:</strong> Sephimandev<br>
+<strong>Contacto:</strong> sephimandev@gmail.com<br>
+<strong>Fecha de entrada en vigor:</strong> 24/10/2026</p>
+
+<h2>1. Quiénes somos y contacto</h2>
+<p>Fastkeep ha sido desarrollada por Sephimandev. Para cualquier pregunta, sugerencia o consulta relativa a esta política de privacidad o a la aplicación, puedes ponerte en contacto con el desarrollador por correo electrónico en <a href="mailto:sephimandev@gmail.com">sephimandev@gmail.com</a>.</p>
+
+<h2>2. Sin cuenta</h2>
+<p>Fastkeep no requiere registro ni creación de cuenta de usuario. No hay inicio de sesión, contraseñas ni servidor propio del desarrollador. El desarrollador no recopila, almacena ni recibe ningún dato personal del usuario.</p>
+
+<h2>3. Qué guarda la aplicación y dónde</h2>
+<p>Fastkeep registra tus ayunos (hora de inicio, objetivo, hora de finalización y fases del cuerpo alcanzadas) y, si decides activarlos, tus registros de peso, calorías diarias y sueño, además de tus ajustes (plan de ayuno, recordatorios y tema visual). Toda esta información se guarda <strong>únicamente en tu dispositivo</strong>, en la base de datos local y en las preferencias de la aplicación. Si desinstalas la aplicación, estos datos se eliminan de tu dispositivo.</p>
+
+<h2>4. Copia de seguridad automática de Android</h2>
+<p>Dado que Fastkeep tiene habilitada la copia de seguridad estándar de Android (Android Auto Backup), el sistema operativo puede realizar una copia de los datos locales de la aplicación (ayunos, registros y ajustes) en tu propia cuenta de Google (copia de Google Drive) asociada al dispositivo. Esto permite recuperar tus datos si cambias de móvil o reinstalas la app. Las opciones de consentimiento publicitario están excluidas y nunca entran en la copia. Puedes desactivar la copia de seguridad de Android en cualquier momento desde los ajustes de tu dispositivo en <em>Ajustes → Google → Copia de seguridad</em> (o <em>Ajustes → Sistema → Copia de seguridad</em>, según el fabricante y versión de Android).</p>
+
+<h2>5. Exportación e importación</h2>
+<p>Fastkeep permite exportar tus registros y ajustes en un archivo de copia de seguridad en formato JSON legible. Este archivo lo creas tú de forma manual y eliges dónde guardarlo mediante el selector de archivos del dispositivo (almacenamiento local, unidad externa o almacenamiento en la nube). También puedes importar un archivo previamente exportado para restaurar o combinar tus datos. La aplicación nunca sube ni transmite estos archivos; quedan enteramente bajo tu control.</p>
+
+<h2>6. Health Connect</h2>
+<p>Si decides activar en Ajustes «Peso desde Health Connect», «Calorías desde Health Connect» o «Sueño desde Health Connect», Fastkeep solicita permiso a Health Connect de Android para leer únicamente los siguientes tipos de datos:</p>
+<ul>
+  <li><strong>Peso</strong> (<code>WeightRecord</code>): la última pesada de cada día natural.</li>
+  <li><strong>Energía nutricional</strong> (<code>NutritionRecord</code>): la energía de cada comida, sumada por día natural. No se lee ningún otro nutriente ni detalle alimentario.</li>
+  <li><strong>Sesiones de sueño</strong> (<code>SleepSessionRecord</code>): la duración del sueño por día natural para las sesiones finalizadas en ese día.</li>
+</ul>
+<p>La lectura desde Health Connect es completamente opcional y viene <strong>desactivada por defecto</strong>. Es estrictamente de <strong>solo lectura</strong>: Fastkeep nunca escribe en Health Connect y nunca lee datos de ayuno de Health Connect (Health Connect no tiene tipo de dato para ayuno, y tus registros de ayuno existen exclusivamente dentro de Fastkeep). La lectura solo se realiza con la aplicación abierta en primer plano, nunca en segundo plano.</p>
+<p>El tratamiento es local en tu dispositivo mediante IPC de Android. Los datos leídos de Health Connect se guardan junto al resto de tus registros en tu teléfono y <strong>nunca se transmiten</strong> al desarrollador ni a terceros, no se venden, no se usan para publicidad y no se utilizan para diagnóstico ni consejo médico.</p>
+<p>Tú tienes el control: puedes desactivar cualquiera de los tres tipos en los Ajustes de Fastkeep en cualquier momento, o retirar los permisos de Fastkeep en los ajustes de Health Connect de Android (<em>Ajustes → Aplicaciones → Health Connect → Permisos de aplicaciones → Fastkeep</em>, o <em>Ajustes → Health Connect → Permisos de aplicaciones → Fastkeep</em>). Los datos ya leídos permanecen en Fastkeep hasta que los borres en la propia aplicación.</p>
+<p>El uso que hace Fastkeep de la información recibida de Health Connect cumple con la <a href="https://support.google.com/googleplay/android-developer/answer/9888379">Política de permisos de Health Connect</a>, incluidos los requisitos de uso limitado.</p>
+
+<h2>7. Publicidad</h2>
+<p>Fastkeep es gratuita y muestra anuncios nativos de Google AdMob en huecos fijos (nunca anuncios a pantalla completa que interrumpan el uso de la aplicación). Para servir anuncios, medir su rendimiento y prevenir el fraude, el SDK de Google Mobile Ads puede recopilar datos como identificadores del dispositivo (incluido el ID de publicidad y el ID de conjunto de aplicaciones), ubicación aproximada a partir de tu dirección IP, interacciones con anuncios e información de diagnóstico. Este tratamiento lo realiza Google conforme a sus propias políticas de privacidad:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy">Política de privacidad de Google</a></li>
+  <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Declaración de datos del SDK de Google Mobile Ads</a></li>
+</ul>
+<p>Donde la legislación lo exige (Espacio Económico Europeo, Reino Unido y Suiza), Fastkeep solicita tu consentimiento mediante el formulario de la plataforma UMP de Google antes de pedir ningún anuncio. Puedes revisar o cambiar tus preferencias en cualquier momento dentro de la aplicación en <em>Ajustes → Privacidad y anuncios</em>. Si rechazas el consentimiento para la personalización, se mostrarán anuncios no personalizados sin consentimiento. <strong>Ninguno de tus ayunos, pesos, calorías, sueño, datos de Health Connect o ajustes se entrega jamás al SDK de anuncios.</strong></p>
+
+<h2>8. Sin analítica, sin informes de fallos y sin identificadores propios</h2>
+<p>Fastkeep no contiene SDKs de analítica, no incluye herramientas de informe de fallos ni genera identificadores de seguimiento propios. El desarrollador no tiene servidores ni asigna identificadores de usuario. Las únicas conexiones de red son las realizadas directamente por el SDK de AdMob de Google para mostrar anuncios y el formulario de consentimiento. Las sugerencias o mensajes de contacto son correos electrónicos que tú decides enviar libremente desde tu propia app de correo.</p>
+
+<h2>9. Menores</h2>
+<p>Fastkeep está dirigida a personas adultas (mayores de 18 años) y no está orientada a menores de 18 años.</p>
+
+<h2>10. Cambios en esta política</h2>
+<p>Si esta política de privacidad cambia, la versión actualizada se publicará en esta misma página con su fecha de entrada en vigor actualizada en la cabecera.</p>
+
+</body>
+</html>
